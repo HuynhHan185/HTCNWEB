@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHAN2</title>
+</head>
+<meta charset="UTF-8">
+<style>
+    .gallery img {
+        width: 150px;
+        height: auto;
+        margin: 5px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+<body>
+    <h2>Ảnh đại diện và mô tả</h2>
+    <figure>
+        <img src="./anhdaidien.jpg" alt="Ảnh đại diện" width="200">
+        <figcaption>Đây là ảnh đại diện cá nhân của tôi.</figcaption>
+    </figure>
+
+    <h2>Thư viện ảnh</h2>
+    <div class="gallery">
+        <img src="./1.jpg" alt="Ảnh 1">
+        <img src="./2.jpg" alt="Ảnh 2">
+        <img src="./3.jpg" alt="Ảnh 3">
+        <img src="./4.jpg" alt="Ảnh 4">
+    </div>
+</body>
+<h2>Video YouTube</h2>
+<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/Sr_qNVaXfcU?si=SJaTjyxjO5A0GlVJ" 
+    title="YouTube video" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<h2>Audio</h2>
+<audio controls>
+    <source src="https://www.samplefile.com/samples/audio/mp3/mp3_30s_sample_file_470KB.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ audio.
+  </audio>
+  
+</html>
