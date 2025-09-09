@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #63B8FF;
+            color: white;
+        }
+        
+        #logo {
+            grid-area: logo;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        #logo span {
+            background: #0066cc;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        
+        #container {
+            display: grid;
+            grid-template-areas: "menu menu" "left right" "footer footer";
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        
+        #menu {
+            grid-area: menu;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        #left {
+            grid-area: left;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        #left p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            margin-top: 0;
+        }
+        
+        #right {
+            grid-area: right;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            border: 2px solid white;
+        }
+        
+        h3 {
+            margin: 10px 0 0;
+        }
+        
+        #right p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+        
+        #footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            border-top: 2px dotted white;
+        }
+        
+        li {
+            list-style-type: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Content</li>
+            </ul>
+        </div>
+        <div id="Logo">
+            <span>Sky World</span>
+        </div>
+    </div>
+    <div id="left">
+        <h2>Registration Information</h2>
+        <p>Start your travel planning now with our on-line tour regstration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect custom built for your group's needs .</p>
+        <form>
+            <label for="title">Title</label>
+            <select id="title">
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Ms</option>
+            </select>
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" required>
+        </form>
+    </div>
+    <div id="right">
+        <img src="./sky.png" alt="Tralvel Image">
+        <h3>Your've arrived.</h3>
+        <p>Journeys as great as the destinations.</p>
+    </div>
+    <div id="footer">
+        <div>2016 Sky World Tours. All rights reserved.</div>
+        <div>COntact information: Student Name | StudentID | Testing Date </div>
+    </div>
+</body>
+
+</html>
